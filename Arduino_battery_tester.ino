@@ -45,7 +45,7 @@ void setup() {
   digitalWrite(relay_pin, LOW);  
   pinMode(buzz_pin, OUTPUT); 
 
-  Serial.begin(9600);  //открыть порт для связи с компом
+  Serial.begin(serial_speed);  //открыть порт для связи с компом
   Serial.println(" ");
   Serial.println("Тест емкости аккумуляторов. Параметры: ");
   Serial.print("Напряжение выключения ");
